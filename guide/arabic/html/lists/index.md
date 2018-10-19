@@ -4,51 +4,134 @@ localeTitle: قوائم
 ---
 # قوائم
 
-يتم استخدام القوائم لعرض العناصر. هناك 3 أنواع من القوائم.
+.يتم استخدام القوائم لعرض العناصر/البيانات و لدينا 3 أنواع من القوائم
 
 ## قوائم مرتبة
 
-يتم استخدام _قائمة مرتبة_ لوصف مجموعة مرتبة من البيانات. تعرض المتصفحات عادةً قائمة مرتبة كقائمة مُرقمة. قم بإنشاء قائمة مرتبة باستخدام العلامة `<ol>` .
+يتم استخدام القوائم المرتبة لوصف مجموعة مرتبة من العناصر/البيانات وعادة ما تعرض المتصفحات القائمة المرتبة برموز
+
+.`<ol>` لأنشاء قائمة مرتبة نستعمل ميزة 
+
+![alt text][ol]
+
+[ol]: https://i.imgur.com/sPv8C6o.png "قائمة مرتبة"
+
+:وتنقسم القوائم المرتبة إلى خمسة أصناف
+
+**: الأرقام**
+
+![alt text][num]
+
+[num]: https://i.imgur.com/XrZgr68.png "الأرقام"
+
+**: حروف لاتينية صغيرة**
+
+![alt text][a]
+
+[a]: https://i.imgur.com/gAVVnAY.png "حروف لاتينية صغيرة"
+
+**: حروف لاتينية كبيرة**
+
+![alt text][Aa]
+
+[Aa]: https://i.imgur.com/DuBWJmD.png "حروف لاتينية كبيرة"
+
+**: أرقام لاتينية صغيرة**
+
+![alt text][i]
+
+[i]: https://i.imgur.com/W2qeWHH.png "أرقام لاتينية صغير"
+
+**: أرقام لاتينية كبيرة**
+
+![alt text][Ii]
+
+[Ii]: https://i.imgur.com/KnE08JC.png "أرقام لاتينية كبيرة"
 
 ## قوائم غير مرتبة
 
-يتم استخدام _قائمة غير مرتبة_ لوصف مجموعة غير مرتبة من البيانات. تعرض المتصفحات عادة قائمة غير مرتبة كقائمة نقطية. إنشاء قائمة غير مرتبة باستخدام علامة `<ul>` .
+يتم استخدام القوائم الغير المرتبة لوصف مجموعة غير مرتبة من العناصر/البيانات وعادة ما تعرض المتصفحات القائمة الغير المرتبة باستخدام علامات
+
+.`<ul>` لأنشاء قائمة غير مرتبة نستعمل ميزة 
+
+![alt text][ul]
+
+[ul]: https://i.imgur.com/1xzVd6u.png "قائمة غير مرتبة"
+
+:وتنقسم القوائم الغير المرتبة إلى ثلاثة أصناف
+
+**: القرص**
+
+![alt text][disc]
+
+[disc]: https://i.imgur.com/poCezMZ.png "القرص"
+
+**: الدائرة**
+
+![alt text][circle]
+
+[circle]: https://i.imgur.com/se2Dx8n.png "الدائرة"
+
+**: المربع**
+
+![alt text][square]
+
+[square]: https://i.imgur.com/JIoqzO4.png "المربع"
 
 ## قائمة المواد
 
-يجب أن يكون الأطفال المباشرون للقوائم المرتبة وغير المرتبة عناصر قائمة. يتم لف كل عنصر قائمة في `<li>` العلامة. يمكن أن تحتوي علامة عنصر القائمة على [محتوى التدفق](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content) .
+هي التي تحتوي على العناصر التي تكون داخل القوائم `<li>` قائمة المواد 
+
+وتضاف على النحو التالي
+
+![alt text][ol-li]
+
+[ol-li]: https://i.imgur.com/wvYN2jY.png "ol-li"
+
+![alt text][ul-li]
+
+[ul-li]: https://i.imgur.com/bcybzPy.png "ul-li"
 
 ## أمثلة
 
-تتم كتابة قائمة مرتبة ك
+:تتم كتابة قائمة مرتبة كالتالي
 
- `<ol> 
-  <li>January</li> 
-  <li>February</li> 
-  <li>March</li> 
- </ol> 
+`<ol type="A"> 
+  <li>January </li> 
+  <li>February </li> 
+  <li>March </li> 
+</ol>`
+
+![alt text][ol-A]
+
+[ol-A]: https://i.imgur.com/PfmRr0E.png "ol-A"
+
+:ويتم عرضها على النحو التالي
+
+![alt text][final-ol]
+
+[final-ol]: https://i.imgur.com/nPAaIuP.png "final-ol"
+
+:تتم كتابة قائمة غير مرتبة كالتالي
+
+`
+<ul type="square"> 
+  <li>Macintosh </li> 
+  <li>Fuji </li> 
+  <li>Gala </li> 
+</ul>
 ` 
 
-ويتم عرضها على النحو التالي:
+![alt text][ul-square]
 
-1.  كانون الثاني
-2.  شهر فبراير
-3.  مارس
+[ul-square]: https://i.imgur.com/OIlFMDC.png "ul-square"
 
-قائمة غير مرتبة مكتوبة باسم
+:ويتم عرضها على النحو التالي
 
- `<ul> 
-  <li>Macintosh</li> 
-  <li>Fuji</li> 
-  <li>Gala</li> 
- </ul> 
-` 
+![alt text][final-ul]
 
-ويتم عرضها على النحو التالي:
+[final-ul]: https://i.imgur.com/cOU6OOo.png "final-ul"
 
-*   ماكنتوش
-*   فوجي
-*   مهرجان
 
 ## نقاط رصاص التصميم
 
